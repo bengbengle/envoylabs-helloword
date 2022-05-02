@@ -9,6 +9,7 @@ use crate::msg::{CountResponse, ExecuteMsg, QueryMsg};
 
 /// CwTemplateContract is a wrapper around Addr that provides a lot of helpers
 /// for working with this.
+/// CwTemplateContract 是围绕 Addr 的包装器，它提供了很多帮助程序
 #[derive(Serialize, Deserialize, Clone, Debug, PartialEq, JsonSchema)]
 pub struct CwTemplateContract(pub Addr);
 

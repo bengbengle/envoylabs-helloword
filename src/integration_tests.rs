@@ -17,7 +17,7 @@ mod tests {
     const USER: &str = "USER";
     const ADMIN: &str = "ADMIN";
     const NATIVE_DENOM: &str = "denom";
-
+    
     fn mock_app() -> App {
         AppBuilder::new().build(|router, _, storage| {
             router
@@ -64,6 +64,7 @@ mod tests {
             let (mut app, cw_template_contract) = proper_instantiate();
 
             let msg = ExecuteMsg::Increment {};
+
             let cosmos_msg = cw_template_contract.call(msg).unwrap();
             app.execute(Addr::unchecked(USER), cosmos_msg).unwrap();
         }

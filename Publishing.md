@@ -3,6 +3,8 @@
 This is an overview of how to publish the contract's source code in this repo.
 We use Cargo's default registry [crates.io](https://crates.io/) for publishing contracts written in Rust.
 
+这是关于如何在这个 repo 中发布合约源代码的概述。 我们使用 Cargo 的默认注册表 [crates.io](https://crates.io/) 来发布用 Rust 编写的合约。
+
 ## Preparation
 
 Ensure the `Cargo.toml` file in the repo is properly configured. In particular, you want to
